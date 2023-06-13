@@ -1,0 +1,107 @@
+.rugby-field {
+  width: 1000px;
+  height: 500px;
+  background-color: green;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+
+/*.try-area {
+  width: 100px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+}*/
+
+/*.try-area:first-child {
+  left: 0;
+}
+
+.try-area:last-child {
+  right: 0;
+}*/
+
+.halfway-line {
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quater-line {
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 25%;
+}
+
+.quater-line-right {
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  right: 25%;
+}
+
+/*Styling draggable element*/
+#mydiv1, #mydiv2, #mydiv3, #mydiv4, #mydiv5, #mydiv6, #mydiv7, #mydiv8, #mydiv9, #mydiv10, #mydiv11 {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  left: 10px;
+}
+
+#mydiv1header, #mydiv2header, #mydiv3header, #mydiv4header, #mydiv5header, #mydiv6header, #mydiv7header, #mydiv8header, #mydiv9header, #mydiv10header, #mydiv11header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+  position: absolute;
+}
+
+/*team2 style*/
+#my2div1, #my2div2, #my2div3, #my2div4, #my2div5, #my2div6, #my2div7, #my2div8, #my2div9, #my2div10, #my2div11 {
+  position: absolute;
+  z-index: 9;
+  background-color: orange;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  left: 10px;
+}
+
+#my2div1header, #my2div2header, #my2div3header, #my2div4header, #my2div5header, #my2div6header, #my2div7header, #my2div8header, #my2div9header, #my2div10header, #my2div11header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: orange;
+  color: #fff;
+  position: absolute;
+}
+
+/*dugout box*/
+.player-box {
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  position: absolute;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.player-box2 {
+  width: 150px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  position: absolute;
+  top: 200px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
