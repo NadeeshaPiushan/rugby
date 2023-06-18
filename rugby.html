@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rugby Field</title>
+  <title>RugbyCard</title>
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -80,13 +80,29 @@
 
 
 <!-- Rugby field area -->
-    <div class="rugby-field">
+    
+    <canvas id="canvas">
+    <!-- <div class="rugby-field"> -->  
       <div class="try-area"></div>
       <div class="halfway-line"></div>
       <div class="try-area"></div>
       <div class="quater-line"></div>
       <div class="quater-line-right"></div>
+    <!-- </div> -->
+    </canvas>
+
+    <div class="nav">
+        <!-- We will be accessing the data-clr in JavaScript -->
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="#EF626C"></div>
+        <div class="clr" data-clr="#fdec03"></div>
+        <div class="clr" data-clr="#24d102"></div>
+        <div class="clr" data-clr="#fff"></div>
+        <button class="clear">clear</button>
+        <button class="save">save</button>
     </div>
+  
+
 
 
 
