@@ -1,3 +1,7 @@
+// script.js
+
+
+
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv1"));
 dragElement(document.getElementById("mydiv2")); 
@@ -65,6 +69,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
 
 
 // drawing book js part

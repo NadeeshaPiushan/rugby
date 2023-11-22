@@ -1,113 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RugbyCard</title>
+  <title>be4game</title>
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-  <div class="player-box">
-    <div id="mydiv1">
-      <div id="mydiv1header">Player1</div>
-    </div>
-    <div id="mydiv2">
-      <div id="mydiv2header">Player2</div>
-    </div>
-    <div id="mydiv3">
-      <div id="mydiv3header">Player3</div>
-    </div>
-    <div id="mydiv4">
-      <div id="mydiv4header">Player4</div>
-    </div>
-    <div id="mydiv5">
-      <div id="mydiv5header">Player5</div>
-    </div>
-    <div id="mydiv6">
-      <div id="mydiv6header">Player6</div>
-    </div>
-    <div id="mydiv7">
-      <div id="mydiv7header">Player7</div>
-    </div>
-    <div id="mydiv8">
-      <div id="mydiv8header">Player8</div>
-    </div>
-    <div id="mydiv9">
-      <div id="mydiv9header">Player9</div>
-    </div>
-    <div id="mydiv10">
-      <div id="mydiv10header">Player10</div>
-    </div>
-    <div id="mydiv11">
-      <div id="mydiv11header">Player11</div>
-    </div>
-   </div>
 
-   <div class="player-box2">
-    <div id="my2div1">
-      <div id="my2div1header">Player1</div>
+  <!-- this is the drawing tools area -->
+  <div id="nav">
+      <!-- We will be accessing the data-clr in JavaScript -->
+      <div class="clr" data-clr="#000"></div>
+      <div class="clr" data-clr="#EF626C"></div>
+      <div class="clr" data-clr="#fdec03"></div>
+      <div class="clr" data-clr="#24d102"></div>
+      <div class="clr" data-clr="#fff"></div>
+      <button class="clear">clear</button>
+      <button class="save">save</button>
+  </div>
+
+  <div id="container">
+    <div id="sidebar">
+      <!-- This part is the side mene of the website -->
+      <div class="player-box">
+          <div id="mydiv1">
+            <div id="mydiv1header">Player1</div>
+          </div>
+          <div id="mydiv2">
+            <div id="mydiv2header">Player2</div>
+          </div>
+          <div id="mydiv3">
+            <div id="mydiv3header">Player3</div>
+          </div>
+          <div id="mydiv4">
+            <div id="mydiv4header">Player4</div>
+          </div>
+          <div id="mydiv5">
+            <div id="mydiv5header">Player5</div>
+          </div>
+          <div id="mydiv6">
+            <div id="mydiv6header">Player6</div>
+          </div>
+          <div id="mydiv7">
+            <div id="mydiv7header">Player7</div>
+          </div>
+          <div id="mydiv8">
+            <div id="mydiv8header">Player8</div>
+          </div>
+          <div id="mydiv9">
+            <div id="mydiv9header">Player9</div>
+          </div>
+          <div id="mydiv10">
+            <div id="mydiv10header">Player10</div>
+          </div>
+          <div id="mydiv11">
+            <div id="mydiv11header">Player11</div>
+          </div>
+      </div>
+
+       <!-- This is the team 2 players icons --> 
+      <div class="player-box2">
+        <div id="my2div1">
+          <div id="my2div1header">Player1</div>
+        </div>
+        <div id="my2div2">
+          <div id="my2div2header">Player2</div>
+        </div>
+        <div id="my2div3">
+          <div id="my2div3header">Player3</div>
+        </div>
+        <div id="my2div4">
+          <div id="my2div4header">Player4</div>
+        </div>
+        <div id="my2div5">
+          <div id="my2div5header">Player5</div>
+        </div>
+        <div id="my2div6">
+          <div id="my2div6header">Player6</div>
+        </div>
+        <div id="my2div7">
+          <div id="my2div7header">Player7</div>
+        </div>
+        <div id="my2div8">
+          <div id="my2div8header">Player8</div>
+        </div>
+        <div id="my2div9">
+          <div id="my2div9header">Player9</div>
+        </div>
+        <div id="my2div10">
+          <div id="my2div10header">Player10</div>
+        </div>
+        <div id="my2div11">
+          <div id="my2div11header">Player11</div>
+        </div>     
+      </div>
+    </div>  
+
+    <div id="main">
+      <!-- This is the canvas area where the pitch will be drawn -->
+      <canvas id="canvas"></canvas>
     </div>
-    <div id="my2div2">
-      <div id="my2div2header">Player2</div>
-    </div>
-    <div id="my2div3">
-      <div id="my2div3header">Player3</div>
-    </div>
-    <div id="my2div4">
-      <div id="my2div4header">Player4</div>
-    </div>
-    <div id="my2div5">
-      <div id="my2div5header">Player5</div>
-    </div>
-    <div id="my2div6">
-      <div id="my2div6header">Player6</div>
-    </div>
-    <div id="my2div7">
-      <div id="my2div7header">Player7</div>
-    </div>
-    <div id="my2div8">
-      <div id="my2div8header">Player8</div>
-    </div>
-    <div id="my2div9">
-      <div id="my2div9header">Player9</div>
-    </div>
-    <div id="my2div10">
-      <div id="my2div10header">Player10</div>
-    </div>
-    <div id="my2div11">
-      <div id="my2div11header">Player11</div>
-    </div>     
-   </div>
-   
+
+  </div>
 
 
-<!-- Rugby field area -->
     
-    <canvas id="canvas">
-    <!-- <div class="rugby-field"> -->  
-      <div class="try-area"></div>
-      <div class="halfway-line"></div>
-      <div class="try-area"></div>
-      <div class="quater-line"></div>
-      <div class="quater-line-right"></div>
-    <!-- </div> -->
-    </canvas>
-
-    <div class="nav">
-        <!-- We will be accessing the data-clr in JavaScript -->
-        <div class="clr" data-clr="#000"></div>
-        <div class="clr" data-clr="#EF626C"></div>
-        <div class="clr" data-clr="#fdec03"></div>
-        <div class="clr" data-clr="#24d102"></div>
-        <div class="clr" data-clr="#fff"></div>
-        <button class="clear">clear</button>
-        <button class="save">save</button>
-    </div>
-  
-
-
-
-
-<!-- Link for javascript file -->
-<script src="script.js"></script>
-
+  <!-- Link for javascript file -->
+  <script src="script.js"></script>
 </body>
 </html>
